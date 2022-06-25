@@ -1,0 +1,164 @@
+*{
+  box-sizing: border-box;
+ 
+}
+body{
+
+  font-family: 'Segoe UI', Courier, sans-serif;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+.container .row .title{
+text-align: center;
+margin-top: 40px;
+font-size: 40px;
+font-weight: bolder;
+width: 100%;
+}
+.menu{
+  position: absolute;
+  display: flex;
+  margin-top: 100px;
+  
+}
+.menu__chiken,.menu__beef,.menu__sushi{
+  border: 3px solid black;
+  background-color: rgb(160, 160, 160);
+  width: 90%;
+  height: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-weight: bolder;
+  margin: 20px;
+}
+.title__menu-Chiken{
+  float: right;
+  padding-top: 3px;
+  background-color: #D59898;
+  width: 40%;
+  text-align: center;
+  border: 3px solid black;
+  padding-bottom: 3px;
+  margin-top: -3px;
+  margin-right: -3px;
+  font-size: 24px;
+}
+.title__menu-Beff{
+  float: right;
+  padding-top: 3px;
+  background-color: #C14543;
+  width: 40%;
+  text-align: center;
+  border: 3px solid black;
+  padding-bottom: 3px;
+  margin-top: -3px;
+  margin-right: -3px;
+  font-size: 24px;
+  color: #fff;
+}
+.title__menu-Sushi{
+  float: right;
+  padding-top: 3px;
+  background-color:#E5D198;
+  width: 40%;
+  text-align: center;
+  border: 3px solid black;
+  padding-bottom: 3px;
+  margin-top: -3px;
+  margin-right: -3px;
+  font-size: 24px;
+}
+.desk{
+  font-size: 19px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+@media (max-width: 1471px){
+  .desk{
+    font-size: 15px;
+  }
+  .sushi{
+    font-size: 20px;
+   }
+}
+@media (max-width: 1153px){
+  .desk{
+    font-size: 12px;
+  }
+ .sushi{
+  font-size: 20px;
+ }
+}
+@media (min-width: 767px) and (max-width:911px){
+  
+ 
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    .title__menu-Sushi{
+      float: right;
+      padding-top: 3px;
+      background-color:#E5D198;
+      width: 19%;
+      text-align: center;
+      border: 3px solid black;
+      padding-bottom: 3px;
+      margin-top: -3px;
+      margin-right: -3px;
+      font-size: 20px;
+    }
+    .menu{
+      flex-wrap: wrap;
+      margin-top: 180px;
+    }
+    .menu__sushi{
+      -ms-flex: 0 0 1;
+      flex: 0 0 1;
+      width: 100%;
+    }
+    .menu__sushi .desk  br{
+      display: none;
+    }
+    .desk{
+      font-size: 15px;
+    }
+  .menu__chiken,.menu__beef{
+    -ms-flex: 1 0 0;
+      flex: 1 0 0;
+      min-width: 300px;
+      padding-bottom: 15px;
+  }
+  .menu__chiken,.menu__beef,.menu__sushi{
+   height: 175px;
+  }
+
+}
+
+@media (min-width: 767px) and (max-width: 793px){
+  .title__menu-Beff,.title__menu-Chiken,.desk{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px){
+  .menu{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  }
+
+}
